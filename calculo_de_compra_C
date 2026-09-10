@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    float compra;
+    float pago;
+    float troco;
+
+    // Adicionado o & antes de compra
+    printf("Digite o valor da compra R$: ");
+    scanf("%f", &compra);
+
+    // Adicionado o & antes de pago
+    printf("Digite o valor pago R$: ");
+    scanf("%f", &pago);
+
+    // Removido o 'if' duplicado
+    if (pago < compra) {
+        float falta = compra - pago;
+        printf("\nValor insuficiente! Faltam R$ %.2f\n", falta);
+    } 
+    else {
+        troco = pago - compra;
+        
+        printf("\n=============================\n");
+        printf("Valor da compra: R$ %.2f\n", compra);
+        printf("Valor recebido: R$ %.2f\n", pago);
+        printf("Troco a devolver: R$ %.2f\n", troco);
+        printf("=============================\n");
+    }
+
+    return 0;
+}
