@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+int idade;
+float altura;
+bool pode_entrar;
+
+printf("Digite a sua idade:");
+scanf("%d", &idade);
+
+printf("Digite a sua altura: ");
+scanf("%d", &altura); 
+
+pode_entrar = (idade >= 12) && (altura >= 1.70);
+printf("Elegivel para entrar na atração: %s\n", pode_entrar ? "true" : "false");
+
+
+
+}
+
