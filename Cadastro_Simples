@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>  
+#include <stdbool.h> 
+int main()
+{   
+    char name[50];
+    int idade;
+    float altura;
+    bool CNH; 
+
+
+    strcpy(name, "Ana");
+    
+    idade = 20;
+    altura = 1.60;
+    CNH = true;
+
+    printf("Nome: %s\n", name);
+    printf("Idade: %d anos\n", idade);
+    printf("Altura: %.2f m\n", altura);
+    printf("Possui CNH? %s\n", CNH ? "Sim" : "Nao");
+
+    return 0;
+}
