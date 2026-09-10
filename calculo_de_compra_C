@@ -6,15 +6,14 @@ int main()
     float pago;
     float troco;
 
-    // Adicionado o & antes de compra
+    
     printf("Digite o valor da compra R$: ");
     scanf("%f", &compra);
 
-    // Adicionado o & antes de pago
     printf("Digite o valor pago R$: ");
     scanf("%f", &pago);
 
-    // Removido o 'if' duplicado
+
     if (pago < compra) {
         float falta = compra - pago;
         printf("\nValor insuficiente! Faltam R$ %.2f\n", falta);
